@@ -16,7 +16,8 @@ const memoize = (fun) => {
   return function (...args) {
     let n = args[0];
     if (n in cache) {
-      console.log("Cache");
+      console.log("\n", "Value from Cache");
+      console.log(cache);
       return cache[n];
     } else {
       console.log("Calculating first time");
