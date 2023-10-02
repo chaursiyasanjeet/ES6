@@ -1,3 +1,4 @@
+//calling function on fixed time
 const mythrottle = (fun, d) => {
   return function (...args) {
     document.getElementById("myid").disabled = true;
